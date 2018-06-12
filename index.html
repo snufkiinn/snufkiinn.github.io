@@ -27,13 +27,21 @@
 	</h3>
 
 <script>
-	var imageArray = ["mywork/img_1.jpg","mywork/img_2.jpg","mywork/img_3.jpg","mywork_4.jpg","mywork_5.jpg","mywork_6.jpg"];
+	ImageArray = new Array();
+    image[0] = 'mywork/img_1.jpg';
+    image[1] = 'mywork/img_2.jpg';
+    image[2] = 'mywork/img_3.jpg';
+    image[3] = 'mywork/img_4.jpg';
+    image[4] = 'mywork/img_5.jpg';
+    image[5] = 'mywork/img_6.jpg';
+
 
 function getRandomImage() {
-	var randomNumber = Math.floor(Math.random() * 6) + 1;
+	var randomNumber = Math.floor(Math.random() * 6);
 	var img = "mywork/img_" + randomNumber + ".jpg";
-	document.getElementById("randImage").textContent = ('<img src="' + 'images/random/' + img + '" width="250px">')
-	
+	var img = ImageArray[num];
+    document.getElementById("randImage").textContent = ('<img src="' + 'images/random/' + img + '" width="250px">')
+}
 </script>
  
 
