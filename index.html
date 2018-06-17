@@ -26,29 +26,13 @@
 		...<a href = "gallery.html">things</a>.... 
 	</h3>
 
-<script>
+<script language="JavaScript">
 document.getElementById("demo").innerHTML = "Hello JavaScript!";
 </script>
 
 <noscript>Sorry, your browser does not support JavaScript!</noscript>
 
-<script>
-	ImageArray = new Array();
-    image[0] = 'mywork/img_1.jpg';
-    image[1] = 'mywork/img_2.jpg';
-    image[2] = 'mywork/img_3.jpg';
-    image[3] = 'mywork/img_4.jpg';
-    image[4] = 'mywork/img_5.jpg';
-    image[5] = 'mywork/img_6.jpg';
-
-
-function getRandomImage() {
-	var randomNumber = Math.floor(Math.random() * 6);
-	var img = "mywork/img_" + randomNumber + ".jpg";
-	var img = ImageArray[num];
-    document.getElementById("randImage").textContent = ('<img src="' + 'images/random/' + img + '" width="250px">')
-}
-</script>
+<script src="rand1.js"></script>
  
 
 
